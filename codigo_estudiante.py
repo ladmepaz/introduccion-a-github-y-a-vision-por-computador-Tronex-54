@@ -69,28 +69,3 @@ def estadisticas_por_canal(arreglo_img):
         raise ValueError("El arreglo de imagen debe tener 2 o 3 dimensiones.")
 
     return resultados
-
-ruta_imagen = '/content/Fotografia-de-stock.png'
-
-
-# Leer la imagen
-
-img = leer_imagen(ruta_imagen)
-display(img)
-
-# Obtener información de la imagen
-num_canales, dimensiones = obtener_info_imagen(img)
-print("Número de canales:", num_canales)
-print("Dimensiones:", dimensiones)
-
-# Convertir la imagen a un arreglo de NumPy
-arreglo_img = imagen_a_arreglo(img)
-
-# Calcular estadísticas de intensidad general
-promedio, desviacion_estandar = estadisticas_intensidad(arreglo_img)
-print("Promedio de intensidad:", promedio)
-print("Desviación estándar de intensidad:", desviacion_estandar)
-
-# Calcular estadísticas por canal
-estadisticas_canales = estadisticas_por_canal(arreglo_img)
-print("Estadísticas por canal:", estadisticas_canales)
