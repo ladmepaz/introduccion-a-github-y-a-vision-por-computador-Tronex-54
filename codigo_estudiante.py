@@ -15,7 +15,7 @@ def leer_imagen(ruta_imagen):
     Lee una imagen a partir de una ruta y retorna el objeto imagen usando la librería PIL.
     
     Parámetros:
-    ruta_imagen (str): Ruta de la imagen a leer.
+    ruta_imagen (str): Ruta de la imagen a  leer.
     
     Retorna:
     img: objeto tipo Image de PIL
